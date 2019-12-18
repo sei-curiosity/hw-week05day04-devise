@@ -1,0 +1,7 @@
+<% if(user_signed_in?)%>
+    <%= link_to "Sign out",destroy_user_session_path , method: :delete%> ||
+    <%= link_to "edit",edit_user_registration_path%> ||
+    <%= link_to 'Cars', cars_path%>
+<% end %>
+<h1>home#index</h1>
+<h3>Email :  <%= current_user.email %></h3> 
