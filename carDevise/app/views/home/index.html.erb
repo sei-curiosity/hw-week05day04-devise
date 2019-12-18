@@ -1,0 +1,16 @@
+ <h1> Home page
+
+ </h1>
+
+<%if(user_signed_in?)%>
+    <%=link_to 'Sign out', destroy_user_session_path, method: :delete %>
+     <!-- we should specify the method cux its delete/create if get no need,
+      we get them from the route path / /  in the table if there is no : means there is no id e.g edit/user/
+      http://localhost:3000/rails/info/routes 
+      /users/edit(.:format) -->
+
+    <%= link_to 'Update my Account', edit_user_registration_path %>
+    <h1> hello <%=current_user.email%> </h1>
+    <% else %>
+
+<% end %>
