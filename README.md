@@ -6,7 +6,7 @@ Devise : https://github.com/plataformatec/devise#getting-started
 #### 3 Add the following line to your Gemfile  file
 ```gem 'devise' ```
 #### 4 In the terminal 
-```bundle install``
+```bundle install```
 #### 5 Next, you need to run the generator: 
 ```rails generate devise:install ```
 #### 6 Inside file of config/environments/development.rb: insert this line
