@@ -35,5 +35,5 @@ One-To-Many
 - Name
 - Model
 - Year
-----
+##### You can use `scaffold`
 ```rails g scaffold Car name:string model:string year:string user:references```
