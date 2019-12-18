@@ -1,0 +1,11 @@
+<% if(user_signed_in?)%>
+
+<%= link_to "sign out" , destroy_user_session_path , method: :delete %><br> <br>
+
+<%= link_to "edit ifooooo" , edit_user_registration_path %><br> <br>
+<% end %>
+
+
+<%= @user.email%>
+<br> <br>
+<h1>Welcome  to the Club</h1>
