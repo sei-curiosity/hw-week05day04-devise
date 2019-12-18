@@ -16,8 +16,8 @@ Devise : https://github.com/plataformatec/devise#getting-started
 #### 8 Make new Controller called Home home_controller.rb  with method called index
 #### 9 make new folder called Home ~> inside the folder create file called index.html.erb
 #### 10 Inside view put these lines in file layout application.html.erb
-     ```  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p> ```
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p> 
 #### 11 Then run rails g devise:views in the terminal to make view pages for all devise ex: sign-up , sign-in ..etc
 #### 12 rails generate devise <Name of Model> to create model called User 
 ``` rails generate devise User ```
