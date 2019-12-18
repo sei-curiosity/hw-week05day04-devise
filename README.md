@@ -24,5 +24,9 @@ root to: "home#index"
 -----------
 One-To-Many
 User ---< Cars
+Cars
+1-Name
+2-Model
+3-Year
 
 
