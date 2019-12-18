@@ -25,7 +25,8 @@ Devise : https://github.com/plataformatec/devise#getting-started
 ``` rails db:migrate```
 #### 14 Restart the server
          
-         
+- To see all routes of App in Browser
+```localhost:3000/rails/info/routes```
 -----------
 One-To-Many
 ## User ---< Cars
