@@ -1,7 +1,7 @@
 # hw-week05day04-devise
 Devise : https://github.com/plataformatec/devise#getting-started
 #### 1 create new app ~> rails new carDevise -d=postgresql
-#### 2 Then cd devise-app , create db inside rails ~> rails db:create
+#### 2 Then cd carDevise , create db inside rails ~> rails db:create
 #### 3 Add the following line to your Gemfile  file
 gem 'devise'
 #### 4 In the terminal ~> bundle install
@@ -29,5 +29,4 @@ User ---< Cars
 - Name
 - Model
 - Year
-
 
