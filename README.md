@@ -37,3 +37,6 @@ One-To-Many
 - Year
 ##### You can use `scaffold`
 ```rails g scaffold Car name:string model:string year:string user:references```
+
+##### Resource about Scaffold
+[Scaffold](http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/)
