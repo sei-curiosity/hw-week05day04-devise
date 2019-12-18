@@ -23,7 +23,7 @@ root to: "home#index"
          
 -----------
 One-To-Many
-User ---< Cars
+## User ---< Cars
 —————————
 #### Cars
 - Name
