@@ -35,4 +35,5 @@ One-To-Many
 - Name
 - Model
 - Year
-
+----
+```rails g scaffold Car name:string model:string year:string user:references```
