@@ -1,0 +1,8 @@
+
+<button><%= link_to "sign out", destroy_user_session_path, method: :delete%> </button>
+<button><%= link_to "edit account", edit_user_registration_path %> </button>
+<button><%= link_to "cars", cars_path %> </button>
+<button><%= link_to "new car", new_car_path %> </button>
+<br><hr>
+<h3><em> <%= @user.email %> </em></h3>
+<hr>
