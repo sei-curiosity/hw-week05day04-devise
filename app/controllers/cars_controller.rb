@@ -20,6 +20,7 @@ class CarsController < ApplicationController
 
   # GET /cars/1/edit
   def edit
+    @car = current_user.cars.find(params[:id])
   end
 
   # POST /cars
@@ -72,6 +73,7 @@ class CarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def car_params
+      puts params
       params.require(:car).permit(:name, :model, :year)
     end
 end

@@ -17,8 +17,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @car.user_id %>
+  <%= @car.user.email %>
 </p>
 
-<%= link_to 'Edit', edit_car_path(@car) %> |
+<% if user_signed_in? %>
+  <% if @car.user_id == current_user.id %>
+  <%= link_to 'Edit', edit_car_path(@car) %> |
+  <% end %>
+<% end %>
 <%= link_to 'Back', cars_path %>
