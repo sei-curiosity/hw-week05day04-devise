@@ -15,7 +15,7 @@ class CarsController < ApplicationController
 
   # GET /cars/new
   def new
-    @car = Car.new
+    @car = current_user.cars.new
   end
 
   # GET /cars/1/edit
@@ -25,7 +25,7 @@ class CarsController < ApplicationController
   # POST /cars
   # POST /cars.json
   def create
-    @car = Car.new(car_params)
+    @car = current_user.cars.new(car_params)
 
     respond_to do |format|
       if @car.save
@@ -41,6 +41,7 @@ class CarsController < ApplicationController
   # PATCH/PUT /cars/1
   # PATCH/PUT /cars/1.json
   def update
+    @car = current_user.cars.find(params[:id])
     respond_to do |format|
       if @car.update(car_params)
         format.html { redirect_to @car, notice: 'Car was successfully updated.' }
@@ -55,6 +56,7 @@ class CarsController < ApplicationController
   # DELETE /cars/1
   # DELETE /cars/1.json
   def destroy
+    @car = current_user.cars.find(params[:id])
     @car.destroy
     respond_to do |format|
       format.html { redirect_to cars_url, notice: 'Car was successfully destroyed.' }
